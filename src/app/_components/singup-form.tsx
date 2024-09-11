@@ -14,9 +14,14 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const formSchema = z.object({ email: z.string().email() });
+const defaultValues = {
+  email: "",
+};
 
+// TODO: replace with a check or thumbs up after submission?
 export function SignupForm() {
   const { isPending, execute, data, error } = useServerAction(
     mailchimpSignupAction
@@ -24,13 +29,14 @@ export function SignupForm() {
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: "",
-    },
+    defaultValues,
   });
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const [data, err] = await execute(values);
-    console.log({ data, err });
+    if (err) return toast.error("Could not add email, sorry!");
+    toast.success("Email added to mailing list, thanks!");
+    form.reset(defaultValues);
   }
 
   return (
@@ -48,7 +54,7 @@ export function SignupForm() {
             </FormItem>
           )}
         />
-        <Button disabled={isPending} type="submit" className="w-full">
+        <Button disabled={isPending} type="submit" className="w-full mt-4">
           {isPending ? "Signing up..." : "Signup"}
         </Button>
       </form>
