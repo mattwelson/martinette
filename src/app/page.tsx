@@ -3,6 +3,7 @@ import { Header } from "./_components/header";
 import { Hero } from "./_components/hero";
 import { SignupForm } from "./_components/singup-form";
 import { Toaster } from "@/components/ui/sonner";
+import { Event } from "./_components/event";
 
 export default function Home() {
   return (
@@ -10,6 +11,10 @@ export default function Home() {
       <Header />
       <div className="grid grid-cols-layout [&>*]:col-start-2 gap-4 max-w-full">
         <Hero />
+      </div>
+
+      <div className="grid grid-cols-layout [&>*]:col-start-2 gap-4 max-w-full">
+        <Event />
       </div>
 
       <div className="grid grid-cols-layout [&>*]:col-start-2 gap-4 max-w-full py-16">
