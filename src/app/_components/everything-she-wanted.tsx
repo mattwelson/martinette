@@ -1,13 +1,14 @@
 import Image from "next/image";
 
 import MoodBoard from "./ESW Mood board_20241115_080943_0000.png";
+import Cover from "./ESWCover.png";
 
 export function EverythingSheWanted() {
   return (
     <div className="flex flex-col gap-4 my-8">
       <h2 className="font-script text-4xl">Everything She Wanted</h2>
       <h3 className="uppercase font-serif text-3xl">March 21 2025</h3>
-      <Image src={MoodBoard} alt="Mood boaard for Everything She Wanted" />
+      <Image src={Cover} alt="Cover for Everything She Wanted" />
 
       <p>
         Madeline is on the lookout for love in her final year of university when
@@ -33,6 +34,7 @@ export function EverythingSheWanted() {
         relationships or will she find the strength within herself to change her
         situation?
       </p>
+      <Image src={MoodBoard} alt="Mood board for Everything She Wanted" />
     </div>
   );
 }
