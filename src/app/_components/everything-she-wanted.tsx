@@ -8,7 +8,12 @@ export function EverythingSheWanted() {
     <div className="flex flex-col gap-4 my-8">
       <h2 className="font-script text-4xl">Everything She Wanted</h2>
       <h3 className="uppercase font-serif text-3xl">March 21 2025</h3>
-      <Image src={Cover} alt="Cover for Everything She Wanted" />
+      <figure>
+        <Image src={Cover} alt="Cover for Everything She Wanted" />
+        <figcaption className="italic text-slate-500 text-center">
+          ISBN 9780473731380
+        </figcaption>
+      </figure>
 
       <p>
         Madeline is on the lookout for love in her final year of university when
