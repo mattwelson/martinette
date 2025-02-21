@@ -26,9 +26,6 @@ export default function Home() {
         <SignupForm />
       </div>
 
-      <div className="grid grid-cols-layout [&>*]:col-start-2 gap-4 max-w-full py-16">
-        <div>For enquiries martinette.williams@gmail.com</div>
-      </div>
       <Toaster />
     </main>
   );
