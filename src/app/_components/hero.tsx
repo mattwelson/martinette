@@ -5,7 +5,7 @@ import { NzsaLogo } from "./nzsa-logo";
 
 export function Hero() {
   return (
-    <div className="col-span-3 max-w-3xl mx-auto grid justify-center items-center my-8 md:my-16 md:grid-cols-2 gap-12">
+    <div className="col-start-1 col-span-3 max-w-3xl mx-auto grid justify-center items-center my-8 md:my-16 md:grid-cols-2 gap-12">
       <div className="flex justify-center md:flex-1">
         <Image
           src={martz}
