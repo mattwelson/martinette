@@ -1,16 +1,20 @@
 import Image from "next/image";
 
 import martz from "./martz.jpg";
+import { NzsaLogo } from "./nzsa-logo";
 
 export function Hero() {
   return (
-    <div className="flex justify-center items-center my-8 md:my-16 flex-col md:flex-row gap-12">
-      <Image
-        src={martz}
-        alt="Picture of Martinette"
-        sizes="24rem"
-        className="w-96 md:flex-1"
-      />
+    <div className="col-span-3 max-w-3xl mx-auto grid justify-center items-center my-8 md:my-16 md:grid-cols-2 gap-12">
+      <div className="flex justify-center md:flex-1">
+        <Image
+          src={martz}
+          alt="Picture of Martinette"
+          sizes="24rem"
+          className="w-96"
+        />
+      </div>
+      <NzsaLogo />
       <div className="flex-1">
         <h2 className="font-script text-4xl lg:text-6xl font-medium my-4 md:indent-6">
           Meet Martinette
