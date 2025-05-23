@@ -89,7 +89,7 @@ function Stockist({
         <h2 className="text-2xl font-bold">{title}</h2>
         <ul>
           {items.map(({ title, url }) => (
-            <li className="">
+            <li className="" key={url}>
               <a href={url} target="_blank" rel="noreferrer noopener">
                 <span className="text-blue-800">{title}</span>
               </a>
