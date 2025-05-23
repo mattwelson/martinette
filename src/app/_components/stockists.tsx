@@ -19,20 +19,60 @@ const STORES = [
 
 const LIBRARIES = [
   {
-    title: "Auckland",
+    title: "Kaitaia Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/farnorth/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one?qu=martinette+williams",
+  },
+  {
+    title: "Auckland Library",
     url: "https://discover.aucklandlibraries.govt.nz/search/card?id=519edf9b-dac0-5580-a487-37d5430edc77&entityType=FormatGroup",
   },
   {
-    title: "Tauranga",
+    title: "Hamilton Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/hamilton/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Tauranga Library",
     url: "https://ent.kotui.org.nz/client/en_AU/tauranga/search/results/?ln=en_US&q=martinette%20williams&rw=0",
   },
   {
-    title: "Palmerston North",
+    title: "Puke Ariki / New Plymouth Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/np/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Hastings District Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/hastings/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Palmerston North Library",
     url: "https://ent.kotui.org.nz/client/en_AU/pn/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
-    title: "Christchurch",
+    title: "Wairarapa Library Service",
+    url: "https://www.wls.org.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/204858265/104716291,1",
+  },
+  {
+    title: "Wellington Library",
+    url: "https://catalogue.wcl.govt.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/204852337/104716291,1",
+  },
+  {
+    title: "Tasman District Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/tasman/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Grey District Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/grey/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Christchurch Library",
     url: "https://christchurch.bibliocommons.com/v2/record/S37C1547606",
+  },
+  {
+    title: "Alexandra Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/cq/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Gore Library",
+    url: "https://goredc.softlinkhosting.co.nz:443/liberty/OpacLogin?mode=BASIC&openDetail=true&corporation=goredc&action=search&queryTerm=uuid%3D%22d574420a0a5a00fa5bd32aff006990b2%22&editionUuid=d574420a0a5a00fa5bd32aff006990b2&operator=OR&url=%2Fopac%2Fsearch.do",
   },
 ];
 
