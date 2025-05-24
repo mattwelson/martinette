@@ -48,11 +48,11 @@ const LIBRARIES = [
   },
   {
     title: "Wairarapa Library Service",
-    url: "https://www.wls.org.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/204858265/104716291,1",
+    url: "https://www.wls.org.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/205604029/104716291,1",
   },
   {
     title: "Wellington Library",
-    url: "https://catalogue.wcl.govt.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/204852337/104716291,1",
+    url: "https://catalogue.wcl.govt.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/205605485/104716291,1",
   },
   {
     title: "Tasman District Library",
