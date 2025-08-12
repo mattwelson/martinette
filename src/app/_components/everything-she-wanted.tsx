@@ -43,7 +43,7 @@ export function EverythingSheWanted() {
       </p>
       <div className="flex justify-center">
         <Button asChild>
-          <a href={THE_NILE_URL} target="_blank" rel="noreferrer noopener">
+          <a href={THE_NILE_URL} target="_blank" rel="noopener noreferrer">
             Buy Online
           </a>
         </Button>
