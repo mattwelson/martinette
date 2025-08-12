@@ -1,3 +1,6 @@
+export const THE_NILE_URL =
+  "https://www.thenile.co.nz/books/martinette-williams/everything-she-wanted/9780473731380?srsltid=AfmBOopqfyg5vkpOk5J2FIw1M9f0JEWb_1Ja9MR32SQlXU7QRSCpMMBp";
+
 const STORES = [
   {
     title: "Aotearoa Books",
@@ -10,6 +13,10 @@ const STORES = [
   {
     title: "Pae Pukapuka",
     url: "https://paepukapukanz.com/products/everything-she-wanted-marinette-williams?_pos=1&_sid=5e9ae420e&_ss=r",
+  },
+  {
+    title: "The Nile",
+    url: THE_NILE_URL,
   },
   {
     title: "University Book Shop Dunedin",

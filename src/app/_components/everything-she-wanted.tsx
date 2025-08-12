@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import MoodBoard from "./ESW Mood board_20241115_080943_0000.png";
 import Cover from "./ESWCover.png";
+import { Button } from "@/components/ui/button";
+import { THE_NILE_URL } from "./stockists";
 
 export function EverythingSheWanted() {
   return (
@@ -39,6 +41,13 @@ export function EverythingSheWanted() {
         relationships or will she find the strength within herself to change her
         situation?
       </p>
+      <div className="flex justify-center">
+        <Button asChild>
+          <a href={THE_NILE_URL} target="_blank" rel="noreferrer noopener">
+            Buy Online
+          </a>
+        </Button>
+      </div>
       <Image src={MoodBoard} alt="Mood board for Everything She Wanted" />
     </div>
   );
