@@ -41,7 +41,7 @@ export function EverythingSheWanted() {
         relationships or will she find the strength within herself to change her
         situation?
       </p>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-4">
         <Button asChild>
           <a href={THE_NILE_URL} target="_blank" rel="noopener noreferrer">
             Buy Online
