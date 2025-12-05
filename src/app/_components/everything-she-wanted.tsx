@@ -3,7 +3,7 @@ import Image from "next/image";
 import MoodBoard from "./ESW Mood board_20241115_080943_0000.png";
 import Cover from "./ESWCover.png";
 import { Button } from "@/components/ui/button";
-import { THE_NILE_URL } from "./stockists";
+import { BUY_NOW_URL } from "./stockists";
 
 export function EverythingSheWanted() {
   return (
@@ -43,7 +43,7 @@ export function EverythingSheWanted() {
       </p>
       <div className="flex justify-center mb-4">
         <Button asChild>
-          <a href={THE_NILE_URL} target="_blank" rel="noopener noreferrer">
+          <a href={BUY_NOW_URL} target="_blank" rel="noopener noreferrer">
             Buy Online
           </a>
         </Button>

@@ -1,10 +1,11 @@
-export const THE_NILE_URL =
-  "https://www.thenile.co.nz/books/martinette-williams/everything-she-wanted/9780473731380?srsltid=AfmBOopqfyg5vkpOk5J2FIw1M9f0JEWb_1Ja9MR32SQlXU7QRSCpMMBp";
+import { title } from "process";
+
+export const BUY_NOW_URL = "https://aotearoabooks.co.nz/everything-she-wanted/";
 
 const STORES = [
   {
     title: "Aotearoa Books",
-    url: "https://aotearoabooks.co.nz/everything-she-wanted/",
+    url: BUY_NOW_URL,
   },
   {
     title: "Copy Press",
@@ -15,12 +16,8 @@ const STORES = [
     url: "https://paepukapukanz.com/products/everything-she-wanted-marinette-williams?_pos=1&_sid=5e9ae420e&_ss=r",
   },
   {
-    title: "The Nile",
-    url: THE_NILE_URL,
-  },
-  {
     title: "University Book Shop Dunedin",
-    url: "https://www.unibooks.co.nz/index.php?route=product/product&path=62&product_id=188669&sort=pd.name&order=ASC",
+    url: "https://www.unibooks.co.nz/index.php?route=product/product&product_id=31387&search=everything+she+wanted",
   },
 ];
 
@@ -30,12 +27,24 @@ const LIBRARIES = [
     url: "https://ent.kotui.org.nz/client/en_AU/farnorth/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one?qu=martinette+williams",
   },
   {
+    title: "Whangarei Library",
+    url: "https://wdc.ent.sirsidynix.net.au/client/en_AU/whangarei/search/results?qu=martinette+williams&te=",
+  },
+  {
     title: "Auckland Library",
     url: "https://discover.aucklandlibraries.govt.nz/search/card?id=519edf9b-dac0-5580-a487-37d5430edc77&entityType=FormatGroup",
   },
   {
+    title: "Waikato District Libraries",
+    url: "https://ent.kotui.org.nz/client/en_AU/waikato/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
     title: "Hamilton Library",
     url: "https://ent.kotui.org.nz/client/en_AU/hamilton/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
+    title: "Matamata-Piako Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/mpdc/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/onehttps://ent.kotui.org.nz/client/en_AU/mpdc/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
     title: "Tauranga Library",
@@ -50,12 +59,12 @@ const LIBRARIES = [
     url: "https://ent.kotui.org.nz/client/en_AU/hastings/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
-    title: "Palmerston North Library",
-    url: "https://ent.kotui.org.nz/client/en_AU/pn/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
-  },
-  {
     title: "Wairarapa Library Service",
     url: "https://wls.spydus.co.nz/cgi-bin/spydus.exe/ENQ/OPAC/BIBENQ?SETLVL=&BRN=1603253",
+  },
+  {
+    title: "South Wairarapa Library",
+    url: "https://swlibrary.spydus.co.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/384082433/104716291,1",
   },
   {
     title: "Wellington Library",
@@ -66,12 +75,24 @@ const LIBRARIES = [
     url: "https://ent.kotui.org.nz/client/en_AU/tasman/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
+    title: "Westland District Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/westland/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
     title: "Grey District Library",
     url: "https://ent.kotui.org.nz/client/en_AU/grey/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
+    title: "Kaiapoi Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/waimakariri/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
+  },
+  {
     title: "Christchurch Library",
     url: "https://christchurch.bibliocommons.com/v2/record/S37C1547606",
+  },
+  {
+    title: "Dunedin Libraries",
+    url: "https://ent.kotui.org.nz/client/en_AU/dunedin/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
   {
     title: "Alexandra Library",
@@ -79,7 +100,11 @@ const LIBRARIES = [
   },
   {
     title: "Gore Library",
-    url: "https://goredc.softlinkhosting.co.nz:443/liberty/OpacLogin?mode=BASIC&openDetail=true&corporation=goredc&action=search&queryTerm=uuid%3D%22d574420a0a5a00fa5bd32aff006990b2%22&editionUuid=d574420a0a5a00fa5bd32aff006990b2&operator=OR&url=%2Fopac%2Fsearch.do",
+    url: "https://gorelibraries.spydus.co.nz/cgi-bin/spydus.exe/FULL/OPAC/BIBENQ/296308/855104,1",
+  },
+  {
+    title: "Invercargill Library",
+    url: "https://ent.kotui.org.nz/client/en_AU/invercargill/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:5823992/one",
   },
 ];
 
